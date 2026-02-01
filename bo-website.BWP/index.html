@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BO Website — Project</title>
+  <meta name="description" content="Beroepsopdracht website — demo voor sprint review." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Ga naar content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">BO</div>
+        <div class="brand-text">
+          <strong>BO Website</strong>
+          <span class="muted">Sprint Review Demo</span>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Hoofdmenu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#over" class="nav-link">Over</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeBtn" class="btn btn-ghost" type="button" aria-label="Toggle theme">
+          🌙
+        </button>
+        <a class="btn btn-primary" href="#contact">Demo plannen</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="pill">Potentially shippable product</p>
+          <h1>Een nette BO website die je direct kunt demonstreren.</h1>
+          <p class="lead">
+            Dit is een werkende basisversie: overzichtelijk, responsive en klaar voor feedback tijdens de sprint review.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#features">Bekijk features</a>
+            <a class="btn btn-ghost" href="#over">Lees over het project</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <strong>3+</strong>
+              <span class="muted">User stories</span>
+            </div>
+            <div class="stat">
+              <strong>MoSCoW</strong>
+              <span class="muted">prioritering</span>
+            </div>
+            <div class="stat">
+              <strong>DoD</strong>
+              <span class="muted">quality checks</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card preview">
+          <div class="card-header">
+            <strong>Live preview</strong>
+            <span class="muted">demo flow</span>
+          </div>
+          <div class="card-body">
+            <ol class="steps">
+              <li>Open de website</li>
+              <li>Klik door de features</li>
+              <li>Test contactformulier</li>
+              <li>Check responsive layout</li>
+            </ol>
+            <div class="note">
+              Tip: zet dit online met GitHub Pages en deel een QR-code in de sprint review.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OVER -->
+    <section id="over" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Over het project</h2>
+          <p class="muted">Vul dit later aan met jouw echte BO onderwerp (bedrijf / product / concept).</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="card-body">
+              <h3>Doel</h3>
+              <p>
+                Als bezoeker wil ik snel begrijpen wat dit project is, zodat ik kan beslissen of ik verder wil lezen.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3>Voor wie?</h3>
+              <p>
+                Voor gebruikers die een duidelijke pagina willen met info, features en een manier om contact op te nemen.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3>Scope</h3>
+              <p>
+                Must-have: navigatie, info, features, contact. Could-have: dark mode, animaties, extra pagina’s.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Features</h2>
+          <p class="muted">Klik op een feature om details te zien.</p>
+        </div>
+
+        <div class="features">
+          <button class="feature" type="button" data-title="Responsive layout" data-text="Werkt netjes op mobiel én desktop. Tekst, kaarten en menu schalen mee.">
+            <span class="icon">📱</span>
+            <span class="feature-text">
+              <strong>Responsive layout</strong>
+              <span class="muted">mobiel + desktop</span>
+            </span>
+          </button>
+
+          <button class="feature" type="button" data-title="Toegankelijke navigatie" data-text="Skip-link, duidelijke focus states en logische structuur met headings.">
+            <span class="icon">🧭</span>
+            <span class="feature-text">
+              <strong>Toegankelijke navigatie</strong>
+              <span class="muted">UX basics</span>
+            </span>
+          </button>
+
+          <button class="feature" type="button" data-title="Contactformulier" data-text="Validatie in de browser + nette bevestiging (zonder backend).">
+            <span class="icon">✉️</span>
+            <span class="feature-text">
+              <strong>Contactformulier</strong>
+              <span class="muted">met validatie</span>
+            </span>
+          </button>
+
+          <button class="feature" type="button" data-title="Dark mode (optioneel)" data-text="Knop rechtsboven. Theme wordt onthouden in localStorage.">
+            <span class="icon">🌙</span>
+            <span class="feature-text">
+              <strong>Dark mode</strong>
+              <span class="muted">could-have</span>
+            </span>
+          </button>
+        </div>
+
+        <div class="card modal" id="modal" aria-hidden="true">
+          <div class="modal-inner" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <div class="modal-top">
+              <strong id="modalTitle">Titel</strong>
+              <button class="btn btn-ghost" type="button" id="closeModal">✕</button>
+            </div>
+            <p id="modalText" class="muted">Tekst</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Dit formulier is demo-ready. In een echte versie koppel je dit aan een backend of mailservice.</p>
+        </div>
+
+        <div class="grid-2">
+          <form class="card form" id="contactForm">
+            <div class="card-body">
+              <label>
+                Naam
+                <input name="name" required minlength="2" placeholder="Jouw naam" />
+              </label>
+
+              <label>
+                E-mail
+                <input name="email" type="email" required placeholder="naam@mail.com" />
+              </label>
+
+              <label>
+                Bericht
+                <textarea name="message" required minlength="10" rows="5" placeholder="Typ je bericht..."></textarea>
+              </label>
+
+              <button class="btn btn-primary" type="submit">Versturen</button>
+              <p class="muted small" id="formStatus" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+
+          <aside class="card">
+            <div class="card-body">
+              <h3>Demo checklist</h3>
+              <ul class="checklist">
+                <li>Open Home → Over → Features → Contact</li>
+                <li>Klik een feature open</li>
+                <li>Test formulier (foutmelding + succes)</li>
+                <li>Verklein browser → check responsive</li>
+              </ul>
+
+              <div class="divider"></div>
+
+              <h3>Project gegevens</h3>
+              <p class="muted small">
+                Vul later aan:
+                <br/>• Bedrijfsnaam / opdrachtgever
+                <br/>• Doelgroep
+                <br/>• Links (Figma / GitHub / live)
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>BO Website</strong>
+        <p class="muted small">© <span id="year"></span> — gemaakt voor sprint review.</p>
+      </div>
+
+      <div class="social">
+        <!-- УНИКАЛЬНОЕ ТРЕБОВАНИЕ: какие хендлы в футере -->
+        <a class="social-link" href="#" aria-label="Instagram">Instagram</a>
+        <a class="social-link" href="#" aria-label="TikTok">TikTok</a>
+        <a class="social-link" href="#" aria-label="GitHub">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
